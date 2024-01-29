@@ -1,0 +1,341 @@
+:root {
+    --gray : rgb(36, 36, 36);
+    --card : rgb(123, 123, 123);
+    --contact : rgba(99, 95, 95, 0.432);
+    --transparent : rgba(0,0,0, 0.9)
+}
+
+* {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    max-width: 100vw;
+    box-sizing: border-box;
+}
+
+main {
+    margin-top: 10vh;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    width: 70vw;
+}
+
+.anchor {
+    color: white;
+    cursor: pointer;
+    font-size: 5vh;
+    text-decoration: none;
+    margin: 3vw;
+}
+
+.anchor:hover,
+.anchor:active {
+    border-bottom: 2px solid white;
+}
+
+#navBarContainer {
+    background-color: black;
+    height: 20vh;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    z-index: 3;
+}
+
+#logo {
+    margin-left: 10vw;
+    margin-top: 2vh;
+    width: 140px;
+    height: 100px;
+}
+
+#heading {
+    margin-left: 18vw;
+    margin-top: 7.5vh;
+    display: flex;
+    flex-direction: row;
+}
+
+#socialContainer {
+    display: flex;
+    align-items: center;
+    background-color: var(--gray);
+    width: 23vw;
+}
+
+.image {
+    height: 40px;
+    width: 40px;
+}
+
+#socialsUl {
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+#aboutBody {
+    margin-top: 22.5vh;
+    height: calc(100vh-22.5vh);
+    margin-bottom: 3.5vh;
+}
+
+#info {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#infoHeader {
+    font-size: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#infoSubHeader {
+    margin-top: 2vh;
+    font-size: 30px;
+}
+
+#subParagraph {
+    margin-top: 4vh;
+    font-size: 1.25rem;
+    margin-bottom: 10vh;
+}
+
+#skillsHeader {
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 2vh;
+}
+
+#skillsBox {
+    margin-left: 5vw;
+    margin-right: 5vw;
+    width: 60vw;
+    height: 27.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logos {
+    overflow: hidden;
+    padding: 30px 0;
+    background-color: white;
+    white-space: nowrap;
+}
+
+.slider {
+    display: inline-block;
+    animation: 12.5s slide infinite linear;
+}
+
+.slider img {
+    height: 40px;
+    margin: 0 25px;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+#portfolioBody {
+    height: 200vh;
+    margin-bottom: 15vh;
+}
+
+#portfolioHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.75rem;
+}
+
+#githubContainer {
+    font-size: 1.5rem;
+    margin-top: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.img {
+    margin: 2vh;
+}
+
+#githubProjects {
+    margin-top: 5vh;
+    display: grid;
+    grid-template-columns: 40vw 40vw;
+    grid-template-rows: 55vh 55vh 55vh;
+    gap: 20px;
+}
+
+.githubProject {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--card);
+}
+
+.buttonProject {
+    border: none;
+    color: white;
+    background-color: black;
+    padding-inline: 20px;
+    padding-block: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 1vw;
+}
+
+#contactCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contactButton {
+    cursor: pointer;
+    padding-block: 10px;
+    padding-inline: 20px;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+#contactButton:hover {
+    color: white;
+    background-color: black;
+    transform: scale(1.2);
+}
+
+#contactBody {
+    margin-left: 0;
+    background-color: var(--transparent);
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 4;
+    display: none;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+#contactCardBody {
+    margin-top: 12.5vh;
+    background-color: white;
+    width: 75vw;
+    height: 75vh;
+}
+
+#contactCardHeader {
+    display: flex;
+}
+
+.contactMe {
+    margin-left: 45%;
+}
+
+.times {
+    cursor: pointer;
+    margin-left: 34%;
+    font-size: 2rem;
+}
+
+#contactCardMain {
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 75%;
+    margin-inline: 12.5%;
+    height: 50%;
+    gap: 10%;
+}
+
+.contact {
+    font-size: 1.2rem;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(216, 213, 213);
+    margin: 2vh;
+    padding:20px;
+}
+
+footer {
+    width: 100%;
+    height: 20vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 10vh;
+    margin-top: 5vh;
+}
+
+#footerSocial {
+    margin-top: 10vh;
+    color: white;
+}
+
+#footerHeader {
+    margin-top: 5vh;
+    font-size: 1.25rem;
+    color: white;
+}
+
+#copy {
+    color: white;
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: row;
+}
+
+#date {
+    color: white;
+    margin-left: 1vw;
+}
+
+
+
+@media (max-width: 600px) {
+
+    #navBarContainer {
+        display: none
+    }
+
+    #aboutBody {
+        margin-top: 5vh;
+    }
+    
+    #subParagraph {
+        font-size: 1.15rem;
+    }
+
+    #portfolioBody {
+        margin-bottom: 20vh;
+    }
+    
+}
