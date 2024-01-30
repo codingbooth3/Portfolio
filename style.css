@@ -342,10 +342,6 @@ footer {
         font-size: 1.15rem;
     }
 
-    #portfolioBody {
-        margin-bottom: 20vh;
-    }
-
     #footerSocial {
         display: flex;
     }
@@ -359,10 +355,30 @@ footer {
     }
 
     #githubProjects {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
         margin-left: 0;
         max-width: 100%;
-        margin-left: 0;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
+    }
+
+    #portfolioBody {
+        margin-bottom: 20vh;
+    }
+
+    #contactButton {
+        margin-top: 85vh;
+    }
+
+    footer {
+        margin-top: 10vh;
+    }
+
+    .githubProject {
+        height: 40vh;
+        margin-block: 2vh;
     }
 }
