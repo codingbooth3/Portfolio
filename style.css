@@ -298,6 +298,7 @@ footer {
 #footerSocial {
     margin-top: 10vh;
     color: white;
+    display: none;
 }
 
 #footerHeader {
@@ -318,7 +319,14 @@ footer {
     margin-left: 1vw;
 }
 
-
+.miniLogo {
+    background-color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    padding: 4px;
+}
 
 @media (max-width: 600px) {
 
@@ -337,5 +345,24 @@ footer {
     #portfolioBody {
         margin-bottom: 20vh;
     }
+
+    #footerSocial {
+        display: flex;
+    }
+
+    .miniLogo {
+        margin: 20px;
+    }
     
+    #contactButton:hover {
+        transform: none;
+    }
+
+    #githubProjects {
+        margin-left: 0;
+        max-width: 100%;
+        margin-left: 0;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
 }
