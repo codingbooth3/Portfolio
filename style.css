@@ -381,4 +381,31 @@ footer {
         height: 40vh;
         margin-block: 2vh;
     }
+
+    .contactMe {
+        margin-left: 30%;
+        font-size: 1.5rem;
+    }
+
+    .times {
+        cursor: pointer;
+        margin-left: 17.5%;
+        font-size: 1.5rem;
+    }
+
+    #contactCardMain {
+        display: flex;
+        flex-direction: column;
+        width: 75%;
+    }
+
+    .contact {
+        font-size: 1rem;
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(216, 213, 213);
+        margin: .5vh;
+    }
 }
